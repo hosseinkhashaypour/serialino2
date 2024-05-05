@@ -1,0 +1,172 @@
+:root {
+  --fontirs: irs;
+  --fontbahman: bahman;
+  --fontlale: lale;
+  --fontaviny: aviny;
+  --color1: #04aa6d;
+  --color2: #6528e0;
+  --color3: rgb(7 112 112);
+  --color4: rgb(23, 240, 23);
+  --color5: #0c0025;
+  --color6: rgb(1, 1, 54);
+  --color7: #171615;
+  --color8: #1d1615;
+  --color9: #20211a;
+  --color10: #141514;
+  --color11: #0f0616;
+  --color12: #292827;
+  --glasswhite: rgba(255, 255, 255, 0.5);
+  --whiteneon: rgba(255, 255, 255, 0.9);
+  --bg-light: #eee;
+  --bg-dark: #444;
+  --bg-dark-2: #151515;
+}
+
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: irs;
+  src: url(IRANSansWeb_Bold.ttf);
+}
+
+@font-face {
+  font-family: lale;
+  src: url(Lalezar-Regular.ttf);
+}
+
+@font-face {
+  font-family: bahman;
+  src: url(Bahman\ 1.ttf);
+}
+
+@font-face {
+  font-family: aviny;
+  src: url(aviny.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  color: white;
+  /* transition: background-color 1s; */
+  /* background: var(--bg-dark-2); */
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  border-radius: 1px;
+}
+::-webkit-scrollbar-button {
+  background-color: var(--color2);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color2);
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  /* overflow: hidden; */
+  background: #191d1e; /* Old browsers */
+  background: -moz-linear-gradient(
+    0deg,
+    #191d1e 50%,
+    #283139 100%
+  ); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    color-stop(50%, #191d1e),
+    color-stop(100%, #283139)
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    0deg,
+    #191d1e 50%,
+    #283139 100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    0deg,
+    #191d1e 50%,
+    #283139 100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(0deg, #191d1e 50%, #283139 100%); /* IE10+ */
+  background: linear-gradient(0deg, #191d1e 50%, #283139 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191d1e', endColorstr='#283139',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-attachment: fixed;
+}
+
+/* mobile */
+
+@media (min-width:300px){
+  #user-logged{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  #user-logged > img{
+    width: 12%;
+    box-shadow: 5px 5px 5px 5px var(--color1);
+    border-radius: 50%;
+  }
+  #search-input{
+    display: flex;
+    margin-top: -11%;
+  }
+#search{
+  width: 130%;
+  padding: 10px 20px;
+  font-family: var(--fontirs);
+  background-color: var(--glasswhite);
+  border: none;
+  outline: none;
+  border-radius: 296px;
+}
+#search::placeholder{
+  color: gray;
+}
+.movies{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 10%;
+
+}
+.posters{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+   width: 100%;
+   background-color: var(--bg-dark-2);
+   margin: 10px;
+   padding: 10px 20px;
+   font-family: var(--fontlale);
+   border-radius: 10px;
+}
+.posters > img{
+  width: 100%;
+}
+.show{
+  background-color: #04aa6d;
+  width: 70%;
+  border-radius: 296px;
+  padding: 10px 20px;
+  margin-left: 17%;
+  color: white;
+  border: none;
+  outline: none;
+}
+}
