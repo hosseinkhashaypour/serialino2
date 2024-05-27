@@ -58,7 +58,7 @@ movieTitles.forEach(movieTitle=>{
 document.addEventListener("DOMContentLoaded" , ()=>{
     const getEmail = localStorage.getItem("Email(logged)")
     if(getEmail){
-        const firstLetter = secondMail.charAt(0).toLocaleUpperCase()
+        const firstLetter = getEmail.charAt(0).toLocaleUpperCase()
         const makePFP = document.querySelector("#user-logged > h1")
         makePFP.innerHTML = firstLetter
     }
