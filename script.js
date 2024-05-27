@@ -42,17 +42,17 @@ logo.addEventListener('click', () => {
     location.reload()
 })
 
-document.addEventListener('copy' , (a)=>{
-	a.preventDefault()
-})
+// document.addEventListener('copy' , (a)=>{
+// 	a.preventDefault()
+// })
 
 
-document.addEventListener('contextmenu' , (b)=>{
-	b.preventDefault()
-})
+// document.addEventListener('contextmenu' , (b)=>{
+// 	b.preventDefault()
+// })
 
-window.addEventListener('keydown' , (e)=>{
-	if(e.key === "F12"){
-		e.preventDefault()
-	}
-})
+// window.addEventListener('keydown' , (e)=>{
+// 	if(e.key === "F12"){
+// 		e.preventDefault()
+// 	}
+// })

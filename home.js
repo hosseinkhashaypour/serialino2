@@ -53,3 +53,21 @@ const movieTitles = ['فسیل' , 'soul' , 'creed']
 movieTitles.forEach(movieTitle=>{
     getMoviedata(movieTitle)
 })
+
+
+document.addEventListener("DOMContentLoaded" , ()=>{
+    const getMail = localStorage.getItem("email")
+    if(getMail){
+        const firstLetter = getMail.charAt(0).toLocaleUpperCase()
+        const makePFP = document.querySelector("#user-logged > h1")
+        makePFP.innerHTML = firstLetter
+    }
+})
+
+
+const hPFP = document.querySelector("#user-logged > h1");
+hPFP.addEventListener('click' , ()=>{
+    location.reload()
+})
+
+
